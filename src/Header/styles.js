@@ -4,7 +4,9 @@ export default makeStyles((theme) => ({
   appBar: {
     backgroundColor: '#5D001E', // Dark maroon color
     boxShadow: 'none', // Removing default shadow for a cleaner appearance
+    padding:10
   },
+  
   title: {
     flexGrow: 1,
     fontWeight: 'bold', // Bolder text for emphasis

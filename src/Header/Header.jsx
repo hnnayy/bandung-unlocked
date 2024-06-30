@@ -21,7 +21,7 @@ const Header = ({ onPlaceChanged, onLoad }) => {
     <AppBar position="static" className={classes.appBar}>
       <Toolbar className={classes.toolbar}>
         <Box display="flex" flexDirection="column" alignItems="flex-start">
-          <Typography variant="h5" className={classes.title}>
+          <Typography variant="h4" className={classes.title}>
             Bandung Unlocked
           </Typography>
           <Typography variant="subtitle2" className={classes.subtitle}>
