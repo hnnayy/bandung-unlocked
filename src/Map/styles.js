@@ -24,4 +24,6 @@ export default makeStyles(() => ({
   typography: {
     textAlign: 'center',
   },
+
+  
 }));

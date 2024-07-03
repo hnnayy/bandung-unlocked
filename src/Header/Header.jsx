@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { AppBar, Toolbar, Typography, InputBase, Box, Menu, MenuItem, IconButton } from '@material-ui/core';
+import { Link as Routerlink } from 'react-router-dom';
 import SearchIcon from '@material-ui/icons/Search';
 import MenuIcon from '@material-ui/icons/Menu';
-
 import useStyles from './styles.js';
+
 
 const Header = ({ onPlaceChanged, onLoad }) => {
   const classes = useStyles();
@@ -39,7 +40,7 @@ const Header = ({ onPlaceChanged, onLoad }) => {
             />
           </div>
         </Box>
-        <Box display="flex" alignItems="center" marginLeft="auto">
+        <Box display="flex" alignItems="center" marginLeft="auto" >
           <IconButton edge="end" color="inherit" onClick={handleMenuClick}>
             <MenuIcon />
           </IconButton>
@@ -52,7 +53,14 @@ const Header = ({ onPlaceChanged, onLoad }) => {
             <MenuItem onClick={handleMenuClose}>Gacha Place</MenuItem>
             <MenuItem onClick={handleMenuClose}>To Do List</MenuItem>
           </Menu>
+
+          <Routerlink to='/login'>
+              <button className="bg-transparent hover:bg-black text-white font-bold py-2 px-4 border border-black rounded">
+                login
+                </button>
+            </Routerlink>
         </Box>
+
       </Toolbar>
     </AppBar>
   );
